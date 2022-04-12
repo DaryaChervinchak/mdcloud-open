@@ -1,118 +1,161 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-	<title>Главная</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220412191010">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «mdcloud»</title>
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header" data-scroll="120" data-scroll-show>
-			<div class="header__container">
-				<a href="#" class="header__logo logo">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1537 466">
-						<title>Md Cloud</title>
-						<g id="Слой_2" data-name="Слой 2">
-							<g id="Слой_1-2" data-name="Слой 1">
-								<path class="cls-1" d="M0,466V208.05H44.63l65.66,118.29,66-118.29h45V466H179.28V283.59L110.66,403h-1.1L41.31,284.33V466Z" />
-								<path class="cls-1" d="M310.05,432.61h40.73Q395,432.61,418,405t23.06-71q0-39.92-25-66.4t-66.47-26.49H310.05ZM269.7,207.28h80.69q57.64,0,94.53,35.7t36.89,91q0,57.58-35,94.82Q412.27,466,351.16,466H269.7Z" />
-								<path class="cls-1" d="M1236.26,237.66V384.84c0,4.83,0,9.65-1.21,14.48-1.22,7.24-3.64,13.27-6.07,16.89l-3.64,3.62c-6.06,4.82-13.34,8.44-23,8.44s-18.19-2.41-24.25-9.65c-1.21-1.2-1.21-2.41-2.43-2.41a29.6,29.6,0,0,1-6.06-18.1c0-3.62-1.21-8.44-1.21-13.27V237.66h-40V386.05c0,6,0,12.06,1.21,16.89,2.43,16.89,8.49,30.16,17,39.81q21.82,21.72,54.57,21.71c23,0,42.44-7.23,57-21.71,8.48-8.45,14.55-21.72,17-37.4,1.22-6,1.22-12.06,1.22-19.3V237.66Z" />
-								<path class="cls-1" d="M859.12,159.24l-40,38.39v260.8h40Z" />
-								<path class="cls-1" d="M1075,325.73a77.44,77.44,0,0,0-12.12-15.68c0-1.21-1.22-1.21-2.43-2.42a16.8,16.8,0,0,0-4.85-3.62q-25.47-21.7-61.85-21.71c-26.68,0-48.5,8.44-66.69,25.33-17,16.89-26.68,38.61-26.68,65.15,0,6,0,12.06,1.21,16.89,1.21,7.24,2.43,13.27,6.06,19.3a61.17,61.17,0,0,0,10.92,19.3c2.42,3.62,4.85,6,8.49,9.65,18.19,16.89,40,25.34,66.69,25.34s48.51-8.45,65.49-25.34c18.19-16.88,26.68-39.81,26.68-65.14v-1.21a80,80,0,0,0-3.64-25.33A51.39,51.39,0,0,0,1075,325.73Zm-30.31,57.91c-1.22,12.06-6.07,21.71-13.34,28.95-9.7,9.65-21.83,14.48-37.6,14.48-9.7,0-18.19-2.42-26.68-6a67.41,67.41,0,0,1-10.91-8.45c-2.42-2.41-3.64-4.83-6.06-7.24q-5.46-7.23-7.28-18.09c-1.21-4.83-1.21-9.66-1.21-14.48,0-18.1,4.85-32.57,14.55-41q14.55-14.47,36.38-14.48t36.38,14.48a52.45,52.45,0,0,1,7.28,8.45,53,53,0,0,1,7.27,19.3c1.22,3.62,1.22,8.44,1.22,13.27Z" />
-								<path class="cls-1" d="M1537,320.9c0,48.26-18.19,84.45-54.57,109.78-14.55,10.86-30.32,16.9-44.87,20.51-15.76,3.62-34,4.83-55.78,4.83h-57V325.51l42.45-38.39v131.5h18.19c31.53,0,55.78-6,72.76-19.3,25.46-19.3,37.59-44.64,37.59-78.42,0-16.89-3.64-32.57-10.91-45.84-7.28-14.48-15.77-25.33-26.68-32.57-18.19-12.07-42.45-19.31-74-19.31h-48.5c-2.43-10.85-6.07-21.71-12.13-31.36-21.83-41-65.48-68.77-116.42-68.77a134.44,134.44,0,0,0-86.1,31.37,16.63,16.63,0,0,1-4.85,3.62l-8.49,8.44a16.78,16.78,0,0,0-3.63,4.83,43.25,43.25,0,0,0-8.49,12.06c-2.43,3.62-4.85,8.45-7.28,12.07-1.21-9.65-2.42-19.31-4.85-29q-3.63-10.86-7.27-21.71C1049.51,82,986.45,37.4,913.69,37.4c-87.31,0-160.08,62.73-173.41,146-1.22,9.65-2.43,19.31-2.43,30.16v10.86a120.25,120.25,0,0,0-19.4-6c-6.07-1.21-12.13-1.21-18.19-1.21H699c-29.1,0-53.35,9.65-71.54,29s-27.89,44.63-27.89,74.79c0,29,9.7,54.29,29.1,73.59s42.44,29,72.76,29c26.68,0,52.14-10.86,74-31.37v49.46a149.69,149.69,0,0,1-75.18,20.51c-37.6,0-70.34-12.06-97-37.4-31.52-26.54-46.08-60.32-46.08-102.54,0-43.43,14.56-79.62,43.66-107.37,25.46-24.13,58.21-36.19,99.44-36.19C717.23,78.42,807,0,913.69,0c83.67,0,156.43,48.26,192.81,118.23a171.42,171.42,0,0,1,255.88,66.35h19.4a257.67,257.67,0,0,1,57,6,126.14,126.14,0,0,1,44.87,20.51c17,12.06,29.11,28.95,38.81,48.26C1532.15,277.47,1537,299.19,1537,320.9Z" />
-							</g>
-						</g>
-					</svg>
-				</a>
-				<div class="header__menu menu">
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li><a href="#" class="menu__link">Home</a></li>
-							<li><a href="#" class="menu__link">Services</a></li>
-							<li>
-								<a href="#" class="menu__link">Technologies</a>
-								<span class="menu__arrow"></span>
-								<ul class="menu__sub-list">
-									<li><a href="#" class="menu__sub-link">Submenu</a></li>
-									<li><a href="#" class="menu__sub-link">Submenu</a></li>
-									<li><a href="#" class="menu__sub-link">Submenu</a></li>
-								</ul>
-							</li>
-							<li><a href="#" class="menu__link">About us</a></li>
-						</ul>
-					</nav>
-				</div>
-				<a data-da=".menu__body, 991.98" href="#" class="header__button button">CONTACT us</a>
-			</div>
-		</header>
-		<main class="page">
-
-		</main>
-		<footer class="footer">
-			<div class="footer__container">
-				<a href="#" class="footer__logo logo">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1537 466">
-						<title>Md Cloud</title>
-						<g id="Слой_2" data-name="Слой 2">
-							<g id="Слой_1-2" data-name="Слой 1">
-								<path class="cls-1" d="M0,466V208.05H44.63l65.66,118.29,66-118.29h45V466H179.28V283.59L110.66,403h-1.1L41.31,284.33V466Z" color="#fff" />
-								<path class="cls-1" d="M310.05,432.61h40.73Q395,432.61,418,405t23.06-71q0-39.92-25-66.4t-66.47-26.49H310.05ZM269.7,207.28h80.69q57.64,0,94.53,35.7t36.89,91q0,57.58-35,94.82Q412.27,466,351.16,466H269.7Z" />
-								<path class="cls-1" d="M1236.26,237.66V384.84c0,4.83,0,9.65-1.21,14.48-1.22,7.24-3.64,13.27-6.07,16.89l-3.64,3.62c-6.06,4.82-13.34,8.44-23,8.44s-18.19-2.41-24.25-9.65c-1.21-1.2-1.21-2.41-2.43-2.41a29.6,29.6,0,0,1-6.06-18.1c0-3.62-1.21-8.44-1.21-13.27V237.66h-40V386.05c0,6,0,12.06,1.21,16.89,2.43,16.89,8.49,30.16,17,39.81q21.82,21.72,54.57,21.71c23,0,42.44-7.23,57-21.71,8.48-8.45,14.55-21.72,17-37.4,1.22-6,1.22-12.06,1.22-19.3V237.66Z" />
-								<path class="cls-1" d="M859.12,159.24l-40,38.39v260.8h40Z" />
-								<path class="cls-1" d="M1075,325.73a77.44,77.44,0,0,0-12.12-15.68c0-1.21-1.22-1.21-2.43-2.42a16.8,16.8,0,0,0-4.85-3.62q-25.47-21.7-61.85-21.71c-26.68,0-48.5,8.44-66.69,25.33-17,16.89-26.68,38.61-26.68,65.15,0,6,0,12.06,1.21,16.89,1.21,7.24,2.43,13.27,6.06,19.3a61.17,61.17,0,0,0,10.92,19.3c2.42,3.62,4.85,6,8.49,9.65,18.19,16.89,40,25.34,66.69,25.34s48.51-8.45,65.49-25.34c18.19-16.88,26.68-39.81,26.68-65.14v-1.21a80,80,0,0,0-3.64-25.33A51.39,51.39,0,0,0,1075,325.73Zm-30.31,57.91c-1.22,12.06-6.07,21.71-13.34,28.95-9.7,9.65-21.83,14.48-37.6,14.48-9.7,0-18.19-2.42-26.68-6a67.41,67.41,0,0,1-10.91-8.45c-2.42-2.41-3.64-4.83-6.06-7.24q-5.46-7.23-7.28-18.09c-1.21-4.83-1.21-9.66-1.21-14.48,0-18.1,4.85-32.57,14.55-41q14.55-14.47,36.38-14.48t36.38,14.48a52.45,52.45,0,0,1,7.28,8.45,53,53,0,0,1,7.27,19.3c1.22,3.62,1.22,8.44,1.22,13.27Z" />
-								<path class="cls-1" d="M1537,320.9c0,48.26-18.19,84.45-54.57,109.78-14.55,10.86-30.32,16.9-44.87,20.51-15.76,3.62-34,4.83-55.78,4.83h-57V325.51l42.45-38.39v131.5h18.19c31.53,0,55.78-6,72.76-19.3,25.46-19.3,37.59-44.64,37.59-78.42,0-16.89-3.64-32.57-10.91-45.84-7.28-14.48-15.77-25.33-26.68-32.57-18.19-12.07-42.45-19.31-74-19.31h-48.5c-2.43-10.85-6.07-21.71-12.13-31.36-21.83-41-65.48-68.77-116.42-68.77a134.44,134.44,0,0,0-86.1,31.37,16.63,16.63,0,0,1-4.85,3.62l-8.49,8.44a16.78,16.78,0,0,0-3.63,4.83,43.25,43.25,0,0,0-8.49,12.06c-2.43,3.62-4.85,8.45-7.28,12.07-1.21-9.65-2.42-19.31-4.85-29q-3.63-10.86-7.27-21.71C1049.51,82,986.45,37.4,913.69,37.4c-87.31,0-160.08,62.73-173.41,146-1.22,9.65-2.43,19.31-2.43,30.16v10.86a120.25,120.25,0,0,0-19.4-6c-6.07-1.21-12.13-1.21-18.19-1.21H699c-29.1,0-53.35,9.65-71.54,29s-27.89,44.63-27.89,74.79c0,29,9.7,54.29,29.1,73.59s42.44,29,72.76,29c26.68,0,52.14-10.86,74-31.37v49.46a149.69,149.69,0,0,1-75.18,20.51c-37.6,0-70.34-12.06-97-37.4-31.52-26.54-46.08-60.32-46.08-102.54,0-43.43,14.56-79.62,43.66-107.37,25.46-24.13,58.21-36.19,99.44-36.19C717.23,78.42,807,0,913.69,0c83.67,0,156.43,48.26,192.81,118.23a171.42,171.42,0,0,1,255.88,66.35h19.4a257.67,257.67,0,0,1,57,6,126.14,126.14,0,0,1,44.87,20.51c17,12.06,29.11,28.95,38.81,48.26C1532.15,277.47,1537,299.19,1537,320.9Z" />
-							</g>
-						</g>
-					</svg>
-				</a>
-				<div class="footer__content">
-					<nav class="footer__menu menu-footer">
-						<ul class="menu-footer__list">
-							<li class="menu-footer__item">
-								<a href="#" class="menu-footer__link">Services</a>
-							</li>
-							<li class="menu-footer__item">
-								<a href="#" class="menu-footer__link">Technologies</a>
-							</li>
-							<li class="menu-footer__item">
-								<a href="#" class="menu-footer__link">About us</a>
-							</li>
-							<li class="menu-footer__item">
-								<a href="#" class="menu-footer__link">Home</a>
-							</li>
-							<li class="menu-footer__item">
-								<a href="#" class="menu-footer__link">contact as</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="footer__info">
-						<p>© 2007 - 2021 «Mdloud»</p>
-						<p> All rights reserved</p>
-						<a href="mailto:info@mdcloud" class="footer__email">info@mdcloud</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+	<div class="rootpage">
+		<h1>Верстка «mdcloud»</h1>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="salesforce.html">Salesforce</a></li>
+		</ol>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
-		</div>
-	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220412191010"></script>
 </body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #8773af;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
 
 </html>
