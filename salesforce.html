@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220413144126">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220413200018">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -101,7 +101,10 @@
 				</div>
 				<div class="banner-technology__image">
 					<picture><source srcset="img/technology/salesforce/banner/salesforce-banner.webp" type="image/webp"><img src="img/technology/salesforce/banner/salesforce-banner.png" alt=""></picture>
+					<div class="banner-technology__decor decor decor_one"></div>
+					<div class="banner-technology__decor decor decor_two"></div>
 				</div>
+				<div class="banner-technology__decor decor decor_three"></div>
 			</section>
 			<section class="section _mb-120">
 				<div class="section__container">
@@ -266,43 +269,72 @@
 				<div class="section__container">
 					<h3 class="section__title title _mb-110">Оur Salesforce сonsulting services</h3>
 					<div class="section__content">
+
 						<div class="services-technology">
 							<div class="services-technology__body">
-								<div class="services-technology__content">
-									<div class="services-technology__left">
-										<ul class="services-technology__list">
-											<li class="services-technology__item services-technology__item_color">Salesforce
-												integration and customization</li>
-											<li class="services-technology__item">Migration <br> to
-												Salesforce</li>
-											<li class="services-technology__item">User adoption <br> and support</li>
-										</ul>
-									</div>
-									<div class="services-technology__right">
-										<div class="services-technology__image">
-											<picture><source srcset="img/technology/salesforce/services/services-technology.webp" type="image/webp"><img src="img/technology/salesforce/services/services-technology.png" alt=""></picture>
+								<div data-tabs class="tabs-technology">
+									<nav data-tabs-titles class="tabs-technology__navigation">
+										<button type="button" class="tabs-technology__title _tab-active">Salesforce integration
+											and customization</button>
+										<button type="button" class="tabs-technology__title">Migration <span class="no-wrap">to
+												Salesforce</span></button>
+										<button type="button" class="tabs-technology__title">User adoption <span class="no-wrap">and support</span></button>
+									</nav>
+									<div data-tabs-body class="tabs-technology__content">
+										<div class="tabs-technology__body">
+											<div class="tabs-technology__image">
+												<picture><source srcset="img/technology/salesforce/services/services-technology.webp" type="image/webp"><img src="img/technology/salesforce/services/services-technology.png" alt=""></picture>
+											</div>
+											<div class="tabs-technology__text">
+												<ul>
+													<li>Таб 1</li>
+													<li>Mapping business goals and objectives</li>
+													<li>Proposing suitable Salesforce edition and features</li>
+													<li>Developing sales automation and customer service workflows</li>
+												</ul>
+											</div>
 										</div>
-										<div class="services-technology__text">
-											<ul>
-												<li>Mapping business goals and objectives</li>
-												<li>Proposing suitable Salesforce edition and features</li>
-												<li>Developing sales automation and customer service workflows</li>
-											</ul>
+										<div class="tabs-technology__body">
+											<div class="tabs-technology__image">
+												<picture><source srcset="img/technology/salesforce/services/services-technology.webp" type="image/webp"><img src="img/technology/salesforce/services/services-technology.png" alt=""></picture>
+											</div>
+											<div class="tabs-technology__text">
+												<ul>
+													<li>Таб 2</li>
+													<li>Mapping business goals and objectives</li>
+													<li>Proposing suitable Salesforce edition and features</li>
+													<li>Developing sales automation and customer service workflows</li>
+												</ul>
+											</div>
+										</div>
+										<div class="tabs-technology__body">
+											<div class="tabs-technology__image">
+												<picture><source srcset="img/technology/salesforce/services/services-technology.webp" type="image/webp"><img src="img/technology/salesforce/services/services-technology.png" alt=""></picture>
+											</div>
+											<div class="tabs-technology__text">
+												<ul>
+													<li>Таб 3</li>
+													<li>Mapping business goals and objectives</li>
+													<li>Proposing suitable Salesforce edition and features</li>
+													<li>Developing sales automation and customer service workflows</li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
-								<a href="#" class="services-technology__button button">BOOK A MEETING</a>
+								<div class="services-technology__button">
+									<a href="#" class="button">BOOK A MEETING</a>
+								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 			</section>
 			<div class="help-technology _mb-120" id="form">
 				<div class="help-technology__container">
-					<h3 class="help-technology__title title title_white">We are here to help</h3>
 					<div class="help-technology__form form">
-						<form data-ajax class="form__body" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+						<form class="form__body js-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+							<h3 class="form__title title title_white">We are here to help</h3>
 							<input type="hidden" name="sendURL" value="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8">
 							<input type="hidden" name="oid" value="">
 							<input type="hidden" name="Campaign_ID" value="7014G000001eDg8QAE">
@@ -314,21 +346,21 @@
 							<input type="hidden" name="debugEmail" value="daria.chervinchak@masterdata.ru">
 							<div class="form__inputs">
 								<div class="form__item">
-									<input autocomplete="off" type="text" name="first_name" data-required data-error="Ошибка" placeholder="Full Name" class="form__input input">
+									<input autocomplete="off" type="text" name="first_name" placeholder="Full Name" class="form__input input" required>
 								</div>
 								<div class="form__item">
-									<input autocomplete="off" type="email" data-required="email" name="email" data-required data-error="Ошибка" placeholder="Email" class="form__input input">
+									<input autocomplete="off" type="email" name="email" placeholder="Email" class="form__input input" required>
 								</div>
 								<div class="form__item">
-									<input autocomplete="off" type="text" name="company" data-required data-error="Ошибка" placeholder="Company" class="form__input input">
+									<input autocomplete="off" type="text" name="company" placeholder="Company" class="form__input input" required>
 								</div>
 								<div class="form__item">
-									<input autocomplete="off" type="tel" name="phone" data-error="Ошибка" placeholder="Telephone" class="form__input input">
+									<input autocomplete="off" type="tel" name="phone" placeholder="Telephone" class="form__input input" required>
 								</div>
 							</div>
 							<div class="form__agreement">
 								<div class="checkbox">
-									<input id="c_1" data-error="Ошибка" data-required="checkbox" class="checkbox__input" checked type="checkbox" value="1" name="form[]">
+									<input id="c_1" class="checkbox__input js-checkbox" checked type="checkbox" value="1">
 									<label for="c_1" class="checkbox__label"><span class="checkbox__text">I agree to share my
 											personal data to be used
 											for marketing purposes only, in accordance with
@@ -337,7 +369,13 @@
 								<button type="submit" class="form__button button">Submit</button>
 							</div>
 						</form>
+						<div class="form__success form-success visually-hidden">
+							<div class="form-success__title ">Registration completed successfully!</div>
+						</div>
 					</div>
+					<div class="help-technology__decor decor decor_four"></div>
+					<div class="help-technology__decor decor decor_five"></div>
+					<div class="help-technology__decor decor decor_six"></div>
 				</div>
 			</div>
 			<div class="partners-technology _mb-120">
@@ -408,7 +446,10 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220413144126"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220413200018" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js?_v=20220413200018" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous">
+	</script>
+	<script src="js/app.min.js?_v=20220413200018"></script>
 </body>
 
 </html>
