@@ -3241,11 +3241,6 @@
                         el.classList.remove("_form-focus");
                         formValidate.removeError(el);
                     }
-                    let checkboxes = form.querySelectorAll(".checkbox__input");
-                    if (checkboxes.length > 0) for (let index = 0; index < checkboxes.length; index++) {
-                        const checkbox = checkboxes[index];
-                        checkbox.checked = false;
-                    }
                     if (flsModules.select) {
                         let selects = form.querySelectorAll(".select");
                         if (selects.length) for (let index = 0; index < selects.length; index++) {
@@ -3501,7 +3496,7 @@
         da.init();
         window.addEventListener("DOMContentLoaded", (function() {
             let oidList = document.querySelectorAll("input[name='oid']");
-            if (oidList.length > 0) for (let i = 0; i < oidList.length; i++) {
+            if (oidList.length) for (let i = 0; i < oidList.length; i++) {
                 const oid = oidList[i];
                 oid.value = "00D200000008P1X";
             }
