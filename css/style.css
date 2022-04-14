@@ -2635,7 +2635,7 @@ html.touch .menu__list > li._active .menu__arrow {
   }
 
   .header_transparent .menu__link {
-    fill: #fff;
+    color: #fff;
   }
 
   .header_transparent._header-scroll {
