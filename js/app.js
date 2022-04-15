@@ -7027,7 +7027,7 @@
                     let formBtns = document.querySelectorAll("button[type='submit']");
                     for (let j = 0; j < formBtns.length; j++) {
                         const formBtn = formBtns[j];
-                        if (true !== checkbox.checked) formBtn.setAttribute("disabled", "disabled"); else formBtn.removeAttribute("disabled", "disabled");
+                        if (true == checkbox.checked) formBtn.removeAttribute("disabled", "disabled"); else formBtn.setAttribute("disabled", "disabled");
                     }
                 }));
             }
