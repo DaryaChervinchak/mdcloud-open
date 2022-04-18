@@ -965,12 +965,12 @@ textarea {
   width: 11.0416666667%;
   padding-bottom: 10.8333333333%;
   right: 26.0416666667%;
-  bottom: 4.2579075426%;
+  bottom: 4.8661800487%;
   -webkit-transform: rotate(55deg);
       -ms-transform: rotate(55deg);
           transform: rotate(55deg);
-  -webkit-animation: rotateIn 9s ease, rotate 50s ease 0s infinite;
-          animation: rotateIn 9s ease, rotate 50s ease 0s infinite;
+  -webkit-animation: rotateIn 9s ease, rotate-rewerse 50s ease 0s infinite;
+          animation: rotateIn 9s ease, rotate-rewerse 50s ease 0s infinite;
 }
 
 .blobs-4 {
@@ -1005,7 +1005,7 @@ textarea {
 
 .blobs-7 {
   width: 8.3333333333%;
-  padding-bottom: 10.2941176471%;
+  padding-bottom: 8.0882352941%;
   right: 35.4166666667%;
   bottom: -16.1764705882%;
   -webkit-animation: rotateIn 15s ease, blobs-wave 15s ease-in-out infinite alternate;
@@ -1017,8 +1017,8 @@ textarea {
   padding-bottom: 13.5416666667%;
   left: 7.5520833333%;
   bottom: 31.6301703163%;
-  -webkit-animation: rotateIn 10s ease, rotate 50s ease 0s infinite;
-          animation: rotateIn 10s ease, rotate 50s ease 0s infinite;
+  -webkit-animation: rotateIn 10s ease, rotate-rewerse 50s ease 0s infinite;
+          animation: rotateIn 10s ease, rotate-rewerse 50s ease 0s infinite;
 }
 
 .blobs-9 {
@@ -1294,6 +1294,30 @@ textarea {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-rewerse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes rotate-rewerse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
