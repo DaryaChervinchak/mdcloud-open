@@ -3467,7 +3467,7 @@
         __webpack_require__(125);
         const inputMasks = document.querySelectorAll('input[type="tel"]');
         if (inputMasks.length) modules_flsModules.inputmask = Inputmask({
-            mask: "999-99-9999",
+            mask: "+9-(999) 999-9999",
             showMaskOnHover: false
         }).mask(inputMasks);
         function ssr_window_esm_isObject(obj) {
