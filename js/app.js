@@ -6841,6 +6841,33 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".slider-technology-products")) new core(".slider-technology-products", {
+                modules: [ Navigation, Pagination ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 35,
+                speed: 800,
+                autoHeight: false,
+                slidesPerGroup: 1,
+                pagination: {
+                    el: ".slider-technology-products__swiper-pagination",
+                    clickable: true
+                },
+                breakpoints: {
+                    600: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                        slidesPerGroup: 2
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        slidesPerGroup: 3
+                    }
+                },
+                on: {}
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
