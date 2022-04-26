@@ -2586,6 +2586,10 @@ html.touch .menu__list > li._active .menu__arrow {
   margin-bottom: 0.625rem;
 }
 
+.contact-info__item:nth-child(2) {
+  margin-bottom: 1.25rem;
+}
+
 .contact-info__item a {
   font-weight: normal;
   -webkit-transition: all 0.3s ease 0s;
