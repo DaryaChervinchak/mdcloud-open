@@ -2249,6 +2249,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
+.main-advantages__title._center {
+  text-align: center;
+}
+
 .main-advantages__right {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 60%;
