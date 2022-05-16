@@ -482,20 +482,16 @@ textarea {
   color: #300b67;
 }
 
+.tabs-technology__text ul {
+  padding: 0px 0px 0px 1em;
+}
+
 .tabs-technology__text ul li {
-  position: relative;
-  padding: 0px 0px 0px 0.7692307692em;
+  list-style-type: disc;
 }
 
 .tabs-technology__text ul li:not(:last-child) {
   margin-bottom: 0.7179487179em;
-}
-
-.tabs-technology__text ul li::before {
-  content: "•";
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .products-tabs__navigation {
@@ -2483,6 +2479,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   margin-bottom: 1.875rem;
 }
 
+.item-main-service__icon img {
+  min-height: 2.6875rem;
+}
+
 .item-main-service__title {
   font-weight: 500;
 }
@@ -2922,7 +2922,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 }
 
 .item-social svg {
-  max-width: 4.6875rem;
+  height: 4.6875rem;
 }
 
 @supports (max-width: clamp( 3.125rem , 2.5038819876rem  +  3.1055900621vw , 4.6875rem )) {
@@ -3040,23 +3040,19 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   margin-bottom: 0.9375rem;
 }
 
+.text-with-image__text ul,
+.image-with-text__text ul {
+  padding: 0px 0px 0px 1em;
+}
+
 .text-with-image__text ul li,
 .image-with-text__text ul li {
-  position: relative;
-  padding: 0px 0px 0px 0.9em;
+  list-style-type: disc;
 }
 
 .text-with-image__text ul li:not(:last-child),
 .image-with-text__text ul li:not(:last-child) {
   margin-bottom: 0.7em;
-}
-
-.text-with-image__text ul li::before,
-.image-with-text__text ul li::before {
-  content: "•";
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 @supports (margin-bottom: clamp( 1.875rem , 1.3781055901rem  +  2.4844720497vw , 3.125rem )) {
@@ -3525,6 +3521,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
+.solution-technology__icon img {
+  min-height: 3.25rem;
+}
+
 .solution-technology__title {
   text-align: center;
   font-weight: 700;
@@ -3572,20 +3572,16 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   line-height: 1.375;
 }
 
+.solution-technology__text ul {
+  padding: 0px 0px 0px 1em;
+}
+
 .solution-technology__text ul li {
-  position: relative;
-  padding: 0px 0px 0px 0.8333333333em;
+  list-style-type: disc;
 }
 
 .solution-technology__text ul li:not(:last-child) {
-  margin-bottom: 0.7894736842em;
-}
-
-.solution-technology__text ul li::before {
-  content: "•";
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-bottom: 0.875em;
 }
 
 @supports (margin-bottom: clamp( 1.5625rem , 1.4382763975rem  +  0.6211180124vw , 1.875rem )) {
@@ -3654,20 +3650,16 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
+.pillars-technology__text ul {
+  padding: 0px 0px 0px 1em;
+}
+
 .pillars-technology__text ul li {
-  position: relative;
-  padding: 0px 0px 0px 1.0526315789em;
+  list-style-type: disc;
 }
 
 .pillars-technology__text ul li:not(:last-child) {
   margin-bottom: 0.7894736842em;
-}
-
-.pillars-technology__text ul li::before {
-  content: "•";
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .pillars-technology__left,
@@ -4035,7 +4027,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 }
 
 .article-blog__content ul {
-  padding: 0px 0px 0px 16px;
+  padding: 0px 0px 0px 1em;
 }
 
 .article-blog__content ul li {
@@ -4329,6 +4321,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   border: 3px solid #300b67;
 }
 
+.service-offer__icon img {
+  min-height: 3.5rem;
+}
+
 .services-offer_green .service-offer__icon {
   border: 3px solid #148a14;
 }
@@ -4367,24 +4363,20 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   line-height: 1.5;
 }
 
-.service-offer__text ul:not(:last-child) {
-  margin-bottom: 0.9375rem;
+.service-offer__text ul {
+  padding: 0px 0px 0px 1em;
 }
 
 .service-offer__text ul li {
-  position: relative;
-  padding: 0px 0px 0px 0.8em;
+  list-style-type: disc;
 }
 
 .service-offer__text ul li:not(:last-child) {
   margin-bottom: 1em;
 }
 
-.service-offer__text ul li::before {
-  content: "•";
-  position: absolute;
-  top: 0;
-  left: 0;
+.service-offer__text ul:not(:last-child) {
+  margin-bottom: 0.9375rem;
 }
 
 .service-offer__text p:not(:last-child) {
