@@ -1428,24 +1428,39 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
-.page_blog .animation-main__title,
-.page_stories .animation-main__title {
+.page_blog .animation-main__title {
   line-height: 1.1052631579;
   color: #300b67;
   letter-spacing: 0.0250877193em;
 }
 
 @supports (font-size: clamp( 1.875rem , 1.2041925466rem  +  3.3540372671vw , 3.5625rem )) {
-  .page_blog .animation-main__title,
-  .page_stories .animation-main__title {
+  .page_blog .animation-main__title {
     font-size: clamp( 1.875rem , 1.2041925466rem  +  3.3540372671vw , 3.5625rem );
   }
 }
 
 @supports not (font-size: clamp( 1.875rem , 1.2041925466rem  +  3.3540372671vw , 3.5625rem )) {
-  .page_blog .animation-main__title,
-  .page_stories .animation-main__title {
+  .page_blog .animation-main__title {
     font-size: calc(1.875rem + 1.6875 * (100vw - 20rem) / 50.3125);
+  }
+}
+
+.page_stories .animation-main__title {
+  line-height: 1.0983606557;
+  color: #300b67;
+  letter-spacing: 0.0270491803em;
+}
+
+@supports (font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem )) {
+  .page_stories .animation-main__title {
+    font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem )) {
+  .page_stories .animation-main__title {
+    font-size: calc(1.875rem + 1.9375 * (100vw - 20rem) / 50.3125);
   }
 }
 
@@ -1528,23 +1543,37 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
-.page_blog .animation-main__imitation-title,
-.page_stories .animation-main__imitation-title {
+.page_blog .animation-main__imitation-title {
   line-height: 1.1052631579;
   letter-spacing: 0.0250877193em;
 }
 
 @supports (font-size: clamp( 1.875rem , 1.2041925466rem  +  3.3540372671vw , 3.5625rem )) {
-  .page_blog .animation-main__imitation-title,
-  .page_stories .animation-main__imitation-title {
+  .page_blog .animation-main__imitation-title {
     font-size: clamp( 1.875rem , 1.2041925466rem  +  3.3540372671vw , 3.5625rem );
   }
 }
 
 @supports not (font-size: clamp( 1.875rem , 1.2041925466rem  +  3.3540372671vw , 3.5625rem )) {
-  .page_blog .animation-main__imitation-title,
-  .page_stories .animation-main__imitation-title {
+  .page_blog .animation-main__imitation-title {
     font-size: calc(1.875rem + 1.6875 * (100vw - 20rem) / 50.3125);
+  }
+}
+
+.page_stories .animation-main__imitation-title {
+  line-height: 1.0983606557;
+  letter-spacing: 0.0270491803em;
+}
+
+@supports (font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem )) {
+  .page_stories .animation-main__imitation-title {
+    font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem )) {
+  .page_stories .animation-main__imitation-title {
+    font-size: calc(1.875rem + 1.9375 * (100vw - 20rem) / 50.3125);
   }
 }
 
@@ -6657,12 +6686,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     margin: 0px 0px 2.1875rem 0px;
   }
 
-  .filter-stories__select {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-  }
-
   .stories-all__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
@@ -6849,6 +6872,12 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
         flex-wrap: nowrap;
     overflow: auto;
     margin: 0 -0.625rem;
+  }
+
+  .filter-stories__select {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 
   .services-offer_green .services-offer__body {
