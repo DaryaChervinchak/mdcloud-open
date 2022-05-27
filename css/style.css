@@ -1244,64 +1244,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   top: 1.875rem;
 }
 
-.page_about .page-banner__animation .animation-main__title,
-.page_about .page-banner__animation .animation-main__imitation-title,
-.page_services .page-banner__animation .animation-main__title,
-.page_services .page-banner__animation .animation-main__imitation-title {
-  line-height: normal;
-}
-
-@supports (font-size: clamp( 2.25rem , 1.2562111801rem  +  4.9689440994vw , 4.75rem )) {
-  .page_about .page-banner__animation .animation-main__title,
-  .page_about .page-banner__animation .animation-main__imitation-title,
-  .page_services .page-banner__animation .animation-main__title,
-  .page_services .page-banner__animation .animation-main__imitation-title {
-    font-size: clamp( 2.25rem , 1.2562111801rem  +  4.9689440994vw , 4.75rem );
-  }
-}
-
-@supports not (font-size: clamp( 2.25rem , 1.2562111801rem  +  4.9689440994vw , 4.75rem )) {
-  .page_about .page-banner__animation .animation-main__title,
-  .page_about .page-banner__animation .animation-main__imitation-title,
-  .page_services .page-banner__animation .animation-main__title,
-  .page_services .page-banner__animation .animation-main__imitation-title {
-    font-size: calc(2.25rem + 2.5 * (100vw - 20rem) / 50.3125);
-  }
-}
-
-.page_single-stories .page-banner__animation .animation-main__title,
-.page_single-stories .page-banner__animation .animation-main__imitation-title {
-  line-height: 1.0982142857;
-}
-
-@supports (font-size: clamp( 2.25rem , 1.7531055901rem  +  2.4844720497vw , 3.5rem )) {
-  .page_single-stories .page-banner__animation .animation-main__title,
-  .page_single-stories .page-banner__animation .animation-main__imitation-title {
-    font-size: clamp( 2.25rem , 1.7531055901rem  +  2.4844720497vw , 3.5rem );
-  }
-}
-
-@supports not (font-size: clamp( 2.25rem , 1.7531055901rem  +  2.4844720497vw , 3.5rem )) {
-  .page_single-stories .page-banner__animation .animation-main__title,
-  .page_single-stories .page-banner__animation .animation-main__imitation-title {
-    font-size: calc(2.25rem + 1.25 * (100vw - 20rem) / 50.3125);
-  }
-}
-
-@supports (font-size: clamp( 2.25rem , 1.3059006211rem  +  4.7204968944vw , 4.625rem )) {
-  .page_technologies .page-banner__animation .animation-main__title,
-  .page_technologies .page-banner__animation .animation-main__imitation-title {
-    font-size: clamp( 2.25rem , 1.3059006211rem  +  4.7204968944vw , 4.625rem );
-  }
-}
-
-@supports not (font-size: clamp( 2.25rem , 1.3059006211rem  +  4.7204968944vw , 4.625rem )) {
-  .page_technologies .page-banner__animation .animation-main__title,
-  .page_technologies .page-banner__animation .animation-main__imitation-title {
-    font-size: calc(2.25rem + 2.375 * (100vw - 20rem) / 50.3125);
-  }
-}
-
 .page-banner__text {
   line-height: 1.5454545455;
   color: rgba(229, 229, 229, 0.8);
@@ -1322,6 +1264,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 .page-banner__image {
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .page-banner__image img {
@@ -1375,21 +1318,49 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
+@supports (font-size: clamp( 2.25rem , 1.3059006211rem  +  4.7204968944vw , 4.625rem )) {
+  .page_technologies .animation-main__title {
+    font-size: clamp( 2.25rem , 1.3059006211rem  +  4.7204968944vw , 4.625rem );
+  }
+}
+
+@supports not (font-size: clamp( 2.25rem , 1.3059006211rem  +  4.7204968944vw , 4.625rem )) {
+  .page_technologies .animation-main__title {
+    font-size: calc(2.25rem + 2.375 * (100vw - 20rem) / 50.3125);
+  }
+}
+
+.page_single-stories .animation-main__title {
+  line-height: 1.0982142857;
+}
+
+@supports (font-size: clamp( 2.875rem , 1.3947368421rem  +  1.7543859649vw , 3.5rem )) {
+  .page_single-stories .animation-main__title {
+    font-size: clamp( 2.875rem , 1.3947368421rem  +  1.7543859649vw , 3.5rem );
+  }
+}
+
+@supports not (font-size: clamp( 2.875rem , 1.3947368421rem  +  1.7543859649vw , 3.5rem )) {
+  .page_single-stories .animation-main__title {
+    font-size: calc(2.875rem + 0.625 * (100vw - 84.375rem) / 35.625);
+  }
+}
+
 .page_single-technology .animation-main__title {
   line-height: 1.1153846154;
   letter-spacing: 0.025em;
   color: #300b67;
 }
 
-@supports (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+@supports (font-size: clamp( 2.75rem , 1.5657894737rem  +  1.4035087719vw , 3.25rem )) {
   .page_single-technology .animation-main__title {
-    font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem );
+    font-size: clamp( 2.75rem , 1.5657894737rem  +  1.4035087719vw , 3.25rem );
   }
 }
 
-@supports not (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+@supports not (font-size: clamp( 2.75rem , 1.5657894737rem  +  1.4035087719vw , 3.25rem )) {
   .page_single-technology .animation-main__title {
-    font-size: calc(1.875rem + 1.375 * (100vw - 20rem) / 50.3125);
+    font-size: calc(2.75rem + 0.5 * (100vw - 84.375rem) / 35.625);
   }
 }
 
@@ -1453,15 +1424,34 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   letter-spacing: 0.0270491803em;
 }
 
-@supports (font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem )) {
+@supports (font-size: clamp( 2.875rem , 0.6546052632rem  +  2.6315789474vw , 3.8125rem )) {
   .page_stories .animation-main__title {
-    font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem );
+    font-size: clamp( 2.875rem , 0.6546052632rem  +  2.6315789474vw , 3.8125rem );
   }
 }
 
-@supports not (font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem )) {
+@supports not (font-size: clamp( 2.875rem , 0.6546052632rem  +  2.6315789474vw , 3.8125rem )) {
   .page_stories .animation-main__title {
-    font-size: calc(1.875rem + 1.9375 * (100vw - 20rem) / 50.3125);
+    font-size: calc(2.875rem + 0.9375 * (100vw - 84.375rem) / 35.625);
+  }
+}
+
+.page_about .animation-main__title,
+.page_services .animation-main__title {
+  line-height: normal;
+}
+
+@supports (font-size: clamp( 2.25rem , 1.2562111801rem  +  4.9689440994vw , 4.75rem )) {
+  .page_about .animation-main__title,
+  .page_services .animation-main__title {
+    font-size: clamp( 2.25rem , 1.2562111801rem  +  4.9689440994vw , 4.75rem );
+  }
+}
+
+@supports not (font-size: clamp( 2.25rem , 1.2562111801rem  +  4.9689440994vw , 4.75rem )) {
+  .page_about .animation-main__title,
+  .page_services .animation-main__title {
+    font-size: calc(2.25rem + 2.5 * (100vw - 20rem) / 50.3125);
   }
 }
 
@@ -1493,20 +1483,67 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
+.page_about .animation-main__imitation-title,
+.page_services .animation-main__imitation-title {
+  line-height: normal;
+}
+
+@supports (font-size: clamp( 2.25rem , 1.2562111801rem  +  4.9689440994vw , 4.75rem )) {
+  .page_about .animation-main__imitation-title,
+  .page_services .animation-main__imitation-title {
+    font-size: clamp( 2.25rem , 1.2562111801rem  +  4.9689440994vw , 4.75rem );
+  }
+}
+
+@supports not (font-size: clamp( 2.25rem , 1.2562111801rem  +  4.9689440994vw , 4.75rem )) {
+  .page_about .animation-main__imitation-title,
+  .page_services .animation-main__imitation-title {
+    font-size: calc(2.25rem + 2.5 * (100vw - 20rem) / 50.3125);
+  }
+}
+
+@supports (font-size: clamp( 2.25rem , 1.3059006211rem  +  4.7204968944vw , 4.625rem )) {
+  .page_technologies .animation-main__imitation-title {
+    font-size: clamp( 2.25rem , 1.3059006211rem  +  4.7204968944vw , 4.625rem );
+  }
+}
+
+@supports not (font-size: clamp( 2.25rem , 1.3059006211rem  +  4.7204968944vw , 4.625rem )) {
+  .page_technologies .animation-main__imitation-title {
+    font-size: calc(2.25rem + 2.375 * (100vw - 20rem) / 50.3125);
+  }
+}
+
 .page_single-technology .animation-main__imitation-title {
   line-height: 1.1153846154;
   letter-spacing: 0.025em;
 }
 
-@supports (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+@supports (font-size: clamp( 2.75rem , 1.5657894737rem  +  1.4035087719vw , 3.25rem )) {
   .page_single-technology .animation-main__imitation-title {
-    font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem );
+    font-size: clamp( 2.75rem , 1.5657894737rem  +  1.4035087719vw , 3.25rem );
   }
 }
 
-@supports not (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+@supports not (font-size: clamp( 2.75rem , 1.5657894737rem  +  1.4035087719vw , 3.25rem )) {
   .page_single-technology .animation-main__imitation-title {
-    font-size: calc(1.875rem + 1.375 * (100vw - 20rem) / 50.3125);
+    font-size: calc(2.75rem + 0.5 * (100vw - 84.375rem) / 35.625);
+  }
+}
+
+.page_single-stories .animation-main__imitation-title {
+  line-height: 1.0982142857;
+}
+
+@supports (font-size: clamp( 2.875rem , 1.3947368421rem  +  1.7543859649vw , 3.5rem )) {
+  .page_single-stories .animation-main__imitation-title {
+    font-size: clamp( 2.875rem , 1.3947368421rem  +  1.7543859649vw , 3.5rem );
+  }
+}
+
+@supports not (font-size: clamp( 2.875rem , 1.3947368421rem  +  1.7543859649vw , 3.5rem )) {
+  .page_single-stories .animation-main__imitation-title {
+    font-size: calc(2.875rem + 0.625 * (100vw - 84.375rem) / 35.625);
   }
 }
 
@@ -1566,15 +1603,15 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   letter-spacing: 0.0270491803em;
 }
 
-@supports (font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem )) {
+@supports (font-size: clamp( 2.875rem , 0.6546052632rem  +  2.6315789474vw , 3.8125rem )) {
   .page_stories .animation-main__imitation-title {
-    font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem );
+    font-size: clamp( 2.875rem , 0.6546052632rem  +  2.6315789474vw , 3.8125rem );
   }
 }
 
-@supports not (font-size: clamp( 1.875rem , 1.1048136646rem  +  3.850931677vw , 3.8125rem )) {
+@supports not (font-size: clamp( 2.875rem , 0.6546052632rem  +  2.6315789474vw , 3.8125rem )) {
   .page_stories .animation-main__imitation-title {
-    font-size: calc(1.875rem + 1.9375 * (100vw - 20rem) / 50.3125);
+    font-size: calc(2.875rem + 0.9375 * (100vw - 84.375rem) / 35.625);
   }
 }
 
@@ -5806,49 +5843,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     white-space: nowrap;
   }
 
-  .page-banner__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .page-banner__body {
-    width: 50%;
-    padding: 2.25rem 1.875rem 2.25rem 0rem;
-  }
-
-  .page_about .page-banner__breadcrumbs:not(:last-child),
-  .page_single-stories .page-banner__breadcrumbs:not(:last-child),
-  .page_services .page-banner__breadcrumbs:not(:last-child) {
-    margin-bottom: 3.125rem;
-  }
-
-  .page-banner__text {
-    max-width: 95%;
-  }
-
-  .page-banner__image {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    -webkit-transform: translate(-100%, 0);
-        -ms-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-    padding: 0 0 35.4166666667%;
-  }
-
-  .page-banner__image img {
-    position: absolute;
-    top: 0;
-    left: 2.375rem;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: left;
-       object-position: left;
-  }
-
   .section__subtitle._max-width {
     max-width: initial;
   }
@@ -6098,14 +6092,13 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     -webkit-transform: translate(-100%, 0);
         -ms-transform: translate(-100%, 0);
             transform: translate(-100%, 0);
-    padding: 0 0 35.4166666667%;
     min-height: 43.125rem;
   }
 
   .text-with-image__image img {
     position: absolute;
     top: 0;
-    left: 2.375rem;
+    left: 0;
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
@@ -6151,19 +6144,18 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   .image-with-text__image {
     width: 50%;
     position: relative;
-    padding-bottom: 33.8541666667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 100%;
-    min-height: 39.375rem;
+    min-height: 40.625rem;
   }
 
   .pillars-technology__image img,
   .image-with-text__image img {
     position: absolute;
     top: 0;
-    left: -3.75rem;
+    left: -1.875rem;
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
@@ -6174,6 +6166,49 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 }
 
 @media (min-width: 84.375em) {
+  .page-banner__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .page-banner__body {
+    width: 50%;
+    padding: 2.25rem 1.875rem 2.25rem 0rem;
+  }
+
+  .page_about .page-banner__breadcrumbs:not(:last-child),
+  .page_single-stories .page-banner__breadcrumbs:not(:last-child),
+  .page_services .page-banner__breadcrumbs:not(:last-child) {
+    margin-bottom: 3.125rem;
+  }
+
+  .page-banner__text {
+    max-width: 95%;
+  }
+
+  .page-banner__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+    min-height: 36.25rem;
+  }
+
+  .page-banner__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: left;
+       object-position: left;
+  }
+
   .banner-technology {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6189,12 +6224,20 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     margin-bottom: 3.125rem;
   }
 
-  .page_single-industries .banner-technology__breadcrumbs:not(:last-child) {
-    margin-bottom: 5rem;
-  }
+@supports (margin-bottom: clamp( 3.125rem , -1.3157894737rem  +  5.2631578947vw , 5rem )) {
+    .page_single-industries .banner-technology__breadcrumbs:not(:last-child) {
+      margin-bottom: clamp( 3.125rem , -1.3157894737rem  +  5.2631578947vw , 5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 3.125rem , -1.3157894737rem  +  5.2631578947vw , 5rem )) {
+    .page_single-industries .banner-technology__breadcrumbs:not(:last-child) {
+      margin-bottom: calc(3.125rem + 1.875 * (100vw - 84.375rem) / 35.625);
+    }
+}
 
   .page_single-industries .banner-technology__text {
-    max-width: 85%;
+    max-width: 95%;
   }
 
   .page_stories .banner-technology__text {
@@ -6212,8 +6255,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     -webkit-transform: translate(-100%, 0);
         -ms-transform: translate(-100%, 0);
             transform: translate(-100%, 0);
-    text-align: left;
-    padding: 0 0 35.4% 0;
+    min-height: 36.25rem;
   }
 
   .page_blog .banner-technology__image {
@@ -6230,38 +6272,14 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     left: 0;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
     -o-object-position: left;
        object-position: left;
   }
 }
 
 @media (min-width: 121.875em) {
-  .page-banner__image {
-    padding: 0;
-    min-height: 35.625rem;
-  }
-
-  .page-banner__image img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-
-  .text-with-image__image {
-    padding: 0;
-  }
-
-  .banner-technology__image {
-    padding: 0;
-    min-height: 34.375rem;
-  }
-
-  .banner-technology__image img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-
   .pillars-technology__container._margin-right,
   .image-with-text__container._margin-right {
     margin: 0 auto 0 0;
@@ -6269,12 +6287,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
   .pillars-technology__image._min-height,
   .image-with-text__image._min-height {
-    min-height: 39.375rem;
-  }
-
-  .pillars-technology__image,
-  .image-with-text__image {
-    padding: 0;
+    min-height: 40.625rem;
   }
 }
 
@@ -6322,6 +6335,50 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 }
 
 @media (max-width: 84.375em) {
+  .page-banner__body {
+    margin: 0px 0px 2.1875rem 0px;
+  }
+
+  .page-banner__image {
+    padding: 0 0.9375rem;
+  }
+
+  .page-banner__image img {
+    max-width: 59.375rem;
+  }
+
+  .page_single-stories .animation-main__title {
+    font-size: inherit;
+  }
+
+@supports (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+    .page_single-stories .animation-main__title {
+      font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+    .page_single-stories .animation-main__title {
+      font-size: calc(1.875rem + 1.375 * (100vw - 20rem) / 50.3125);
+    }
+}
+
+  .page_single-technology .animation-main__title {
+    font-size: inherit;
+  }
+
+@supports (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+    .page_single-technology .animation-main__title {
+      font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+    .page_single-technology .animation-main__title {
+      font-size: calc(1.875rem + 1.375 * (100vw - 20rem) / 50.3125);
+    }
+}
+
   .page_blog .animation-main__title {
     font-size: inherit;
   }
@@ -6338,6 +6395,54 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     }
 }
 
+  .page_stories .animation-main__title {
+    font-size: inherit;
+  }
+
+@supports (font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem )) {
+    .page_stories .animation-main__title {
+      font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem )) {
+    .page_stories .animation-main__title {
+      font-size: calc(1.875rem + 2.375 * (100vw - 20rem) / 50.3125);
+    }
+}
+
+  .page_single-technology .animation-main__imitation-title {
+    font-size: inherit;
+  }
+
+@supports (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+    .page_single-technology .animation-main__imitation-title {
+      font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+    .page_single-technology .animation-main__imitation-title {
+      font-size: calc(1.875rem + 1.375 * (100vw - 20rem) / 50.3125);
+    }
+}
+
+  .page_single-stories .animation-main__imitation-title {
+    font-size: inherit;
+  }
+
+@supports (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+    .page_single-stories .animation-main__imitation-title {
+      font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.3284161491rem  +  2.7329192547vw , 3.25rem )) {
+    .page_single-stories .animation-main__imitation-title {
+      font-size: calc(1.875rem + 1.375 * (100vw - 20rem) / 50.3125);
+    }
+}
+
   .page_blog .animation-main__imitation-title {
     font-size: inherit;
   }
@@ -6351,6 +6456,22 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 @supports not (font-size: clamp( 1.875rem , 1.3781055901rem  +  2.4844720497vw , 3.125rem )) {
     .page_blog .animation-main__imitation-title {
       font-size: calc(1.875rem + 1.25 * (100vw - 20rem) / 50.3125);
+    }
+}
+
+  .page_stories .animation-main__imitation-title {
+    font-size: inherit;
+  }
+
+@supports (font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem )) {
+    .page_stories .animation-main__imitation-title {
+      font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem )) {
+    .page_stories .animation-main__imitation-title {
+      font-size: calc(1.875rem + 2.375 * (100vw - 20rem) / 50.3125);
     }
 }
 
@@ -6665,18 +6786,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
   br {
     display: none;
-  }
-
-  .page-banner__body {
-    margin: 0px 0px 2.1875rem 0px;
-  }
-
-  .page-banner__image {
-    padding: 0 0.9375rem;
-  }
-
-  .page-banner__image img {
-    max-width: 59.375rem;
   }
 
   .animation-main {
@@ -7179,6 +7288,12 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+  }
+}
+
+@media (min-width: 84.375em) and (max-width: 84.375em) {
+  .page_single-industries .banner-technology__breadcrumbs:not(:last-child) {
+    margin-bottom: inherit;
   }
 }
 
