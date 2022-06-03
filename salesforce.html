@@ -5,7 +5,7 @@
 	<title>Salesforce</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220527104150">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220603170735">
 	<link rel="shortcut icon" href="favicon.svg">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -380,54 +380,56 @@
 				</div>
 			</div>
 			<div class="help-technology _mb-120" id="form">
-				<div class="help-technology__container">
-					<div class="help-technology__form form">
-						<form class="form__body js-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-							<h3 class="form__title title title_white">We are here to help</h3>
-							<input type="hidden" name="sendURL" value="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8">
-							<input type="hidden" name="oid" value="">
-							<input type="hidden" name="Campaign_ID" value="7014G000001eDg8QAE">
-							<input type="hidden" name="00N20000001fxUq" value="Потенциальный клиент">
-							<input type="hidden" name="Member_Status" value="Trial Requested">
-							<input type="hidden" name="lead_source" value="MD Tech Website">
-							<input type="hidden" name="description" value="Заявка со страницы Salesforce">
-							<input type="hidden" name="00N20000002q2T2" value="Salesforce">
-							<input type="hidden" name="debug" value="1">
-							<input type="hidden" name="debugEmail" value="daria.chervinchak@customertimes.com">
-							<div class="form__inputs">
-								<div class="form__item">
-									<input autocomplete="off" type="text" name="first_name" placeholder="Full Name" class="form__input input" required>
+				<div class="help-technology__inner">
+					<div class="help-technology__container">
+						<div class="help-technology__form form">
+							<form class="form__body js-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+								<h3 class="form__title title title_white">We are here to help</h3>
+								<input type="hidden" name="sendURL" value="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8">
+								<input type="hidden" name="oid" value="">
+								<input type="hidden" name="Campaign_ID" value="7014G000001eDg8QAE">
+								<input type="hidden" name="00N20000001fxUq" value="Потенциальный клиент">
+								<input type="hidden" name="Member_Status" value="Trial Requested">
+								<input type="hidden" name="lead_source" value="MD Tech Website">
+								<input type="hidden" name="description" value="Заявка со страницы Salesforce">
+								<input type="hidden" name="00N20000002q2T2" value="Salesforce">
+								<input type="hidden" name="debug" value="1">
+								<input type="hidden" name="debugEmail" value="daria.chervinchak@customertimes.com">
+								<div class="form__inputs">
+									<div class="form__item">
+										<input autocomplete="off" type="text" name="first_name" placeholder="Full Name" class="form__input input" required>
+									</div>
+									<div class="form__item">
+										<input autocomplete="off" type="email" name="email" placeholder="Email" class="form__input input" required>
+									</div>
+									<div class="form__item">
+										<input autocomplete="off" type="text" name="company" placeholder="Company" class="form__input input" required>
+									</div>
+									<div class="form__item">
+										<input autocomplete="off" type="tel" name="phone" placeholder="Telephone" class="form__input input" required>
+									</div>
 								</div>
-								<div class="form__item">
-									<input autocomplete="off" type="email" name="email" placeholder="Email" class="form__input input" required>
+								<div class="form__agreement">
+									<div class="checkbox">
+										<input id="c_1" class="checkbox__input js-checkbox" type="checkbox" value="1">
+										<label for="c_1" class="checkbox__label"><span class="checkbox__text">I agree to share my
+												personal data to be used
+												for marketing purposes only, in accordance with
+												GDPR regulations</span></label>
+									</div>
+									<button type="submit" disabled class="form__button button">Submit</button>
 								</div>
-								<div class="form__item">
-									<input autocomplete="off" type="text" name="company" placeholder="Company" class="form__input input" required>
+							</form>
+							<div class="form__success form-success visually-hidden">
+								<div class="form-success__title ">Thank you for contacting us!<br> We will respond as soon as
+									possible
 								</div>
-								<div class="form__item">
-									<input autocomplete="off" type="tel" name="phone" placeholder="Telephone" class="form__input input" required>
-								</div>
-							</div>
-							<div class="form__agreement">
-								<div class="checkbox">
-									<input id="c_1" class="checkbox__input js-checkbox" type="checkbox" value="1">
-									<label for="c_1" class="checkbox__label"><span class="checkbox__text">I agree to share my
-											personal data to be used
-											for marketing purposes only, in accordance with
-											GDPR regulations</span></label>
-								</div>
-								<button type="submit" disabled class="form__button button">Submit</button>
-							</div>
-						</form>
-						<div class="form__success form-success visually-hidden">
-							<div class="form-success__title ">Thank you for contacting us!<br> We will respond as soon as
-								possible
 							</div>
 						</div>
+						<div class="help-technology__blobs blobs blobs-9"></div>
+						<div class="help-technology__blobs blobs blobs-10"></div>
+						<div class="help-technology__blobs blobs blobs-11"></div>
 					</div>
-					<div class="help-technology__blobs blobs blobs-9"></div>
-					<div class="help-technology__blobs blobs blobs-10"></div>
-					<div class="help-technology__blobs blobs blobs-11"></div>
 				</div>
 			</div>
 		</main>
@@ -550,10 +552,10 @@
 			</div>
 		</footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220527104150" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js?_v=20220527104150" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220603170735" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js?_v=20220603170735" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous">
 	</script>
-	<script src="js/app.min.js?_v=20220527104150"></script>
+	<script src="js/app.min.js?_v=20220603170735"></script>
 </body>
 
 </html>

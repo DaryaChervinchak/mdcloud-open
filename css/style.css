@@ -1615,10 +1615,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
-.section._blobs {
-  position: relative;
-}
-
 .section__container {
   position: relative;
   z-index: 5;
@@ -1701,7 +1697,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
 .section__subtitle._weight-normal {
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.8);
 }
 
 @supports (margin-bottom: clamp( 1.5625rem , 0.8171583851rem  +  3.7267080745vw , 3.4375rem )) {
@@ -2600,7 +2595,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   background: -o-linear-gradient(top, #481ba6 0%, #2f035b 100%);
   background: linear-gradient(to bottom, #481ba6 0%, #2f035b 100%);
   color: #fff;
-  position: relative;
 }
 
 .main-banner__body {
@@ -2624,6 +2618,14 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   font-size: 1.21875rem;
   line-height: 1.8461538462;
   color: rgba(229, 229, 229, 0.8);
+}
+
+.main-banner__inner,
+.help-technology__inner,
+.section._blobs .section__inner {
+  position: relative;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .main-advantages__left {
@@ -3787,6 +3789,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   z-index: 2;
 }
 
+.banner-technology__image svg {
+  max-width: 53.125rem;
+}
+
 .banner-technology__image image {
   -webkit-clip-path: url("#myClip");
           clip-path: url("#myClip");
@@ -4199,7 +4205,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   background: -webkit-gradient(linear, left top, left bottom, from(#481ba6), to(#2f035b));
   background: -o-linear-gradient(top, #481ba6 0%, #2f035b 100%);
   background: linear-gradient(to bottom, #481ba6 0%, #2f035b 100%);
-  position: relative;
 }
 
 @supports (padding-top: clamp( 3.125rem , 1.6343167702rem  +  7.4534161491vw , 6.875rem )) {
@@ -5371,8 +5376,19 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
 .item-challenges__text {
   text-align: center;
-  font-size: 1.21875rem;
   line-height: 1.358974359;
+}
+
+@supports (font-size: clamp( 1.1875rem , 1.137810559rem  +  0.248447205vw , 1.3125rem )) {
+  .item-challenges__text {
+    font-size: clamp( 1.1875rem , 1.137810559rem  +  0.248447205vw , 1.3125rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.1875rem , 1.137810559rem  +  0.248447205vw , 1.3125rem )) {
+  .item-challenges__text {
+    font-size: calc(1.1875rem + 0.125 * (100vw - 20rem) / 50.3125);
+  }
 }
 
 .overcome-challenges__list {
@@ -6067,7 +6083,8 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
 @media (min-width: 74.9375em) {
   .image-with-text__body {
-    max-width: 60%;
+    max-width: 90%;
+    padding: 2.1875rem 1.875rem 2.1875rem 1.875rem;
   }
 
   .text-with-image__inner {
@@ -6082,7 +6099,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
   .text-with-image__body {
     width: 50%;
-    padding: 2.25rem 1.875rem 2.25rem 0rem;
+    padding: 2.1875rem 1.875rem 2.1875rem 0rem;
   }
 
   .text-with-image__image {
@@ -6105,6 +6122,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
        object-fit: contain;
     -o-object-position: left;
        object-position: left;
+  }
+
+  .pillars-technology__body {
+    padding: 0px 0px 0px 1.875rem;
   }
 
   .pillars-technology,
@@ -6137,7 +6158,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
   .pillars-technology__image._min-height,
   .image-with-text__image._min-height {
-    min-height: auto;
+    min-height: 36.25rem;
   }
 
   .pillars-technology__image,
@@ -6155,7 +6176,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   .image-with-text__image img {
     position: absolute;
     top: 0;
-    left: -1.875rem;
+    left: 0;
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
@@ -6258,14 +6279,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     min-height: 36.25rem;
   }
 
-  .page_blog .banner-technology__image {
-    padding: 0;
-  }
-
-  .banner-technology__image svg {
-    max-width: 53.125rem;
-  }
-
   .banner-technology__image img {
     position: absolute;
     top: 0;
@@ -6279,15 +6292,16 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
+@media (min-width: 93.75em) {
+  .image-with-text__body {
+    max-width: 66%;
+  }
+}
+
 @media (min-width: 121.875em) {
   .pillars-technology__container._margin-right,
   .image-with-text__container._margin-right {
     margin: 0 auto 0 0;
-  }
-
-  .pillars-technology__image._min-height,
-  .image-with-text__image._min-height {
-    min-height: 40.625rem;
   }
 }
 
@@ -6495,6 +6509,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   .banner-technology__image {
     text-align: center;
     padding: 0 0.9375rem;
+  }
+
+  .banner-technology__image svg {
+    max-width: 59.375rem;
   }
 
   .banner-technology__image img {
