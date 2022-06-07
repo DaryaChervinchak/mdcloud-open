@@ -7286,6 +7286,27 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".slider-project-experience")) new core(".slider-project-experience", {
+                modules: [ Navigation, Pagination ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                speed: 800,
+                autoHeight: false,
+                slidesPerGroup: 1,
+                loop: true,
+                pagination: {
+                    el: ".slider-project-experience__swiper-pagination",
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: ".arrow-slider_left",
+                    nextEl: ".arrow-slider_right"
+                },
+                breakpoints: {},
+                on: {}
+            });
             if (document.querySelector(".slider-technology-products")) new core(".slider-technology-products", {
                 modules: [ Navigation, Pagination ],
                 observer: true,
