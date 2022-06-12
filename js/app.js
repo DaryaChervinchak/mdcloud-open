@@ -7269,8 +7269,8 @@
                     clickable: true
                 },
                 navigation: {
-                    prevEl: ".arrow-slider_left",
-                    nextEl: ".arrow-slider_right"
+                    prevEl: ".slider-main-news__button_left",
+                    nextEl: ".slider-main-news__button_right"
                 },
                 breakpoints: {
                     600: {
@@ -7301,8 +7301,8 @@
                     clickable: true
                 },
                 navigation: {
-                    prevEl: ".arrow-slider_left",
-                    nextEl: ".arrow-slider_right"
+                    prevEl: ".slider-project-experience__button_left",
+                    nextEl: ".slider-project-experience__button_right"
                 },
                 breakpoints: {},
                 on: {}
@@ -7342,8 +7342,8 @@
                     slidesPerView: 1,
                     spaceBetween: 0,
                     navigation: {
-                        prevEl: ".arrow-slider_left",
-                        nextEl: ".arrow-slider_right"
+                        prevEl: ".navigation-products-tabs__button_left",
+                        nextEl: ".navigation-products-tabs__button_right"
                     },
                     breakpoints: {
                         600: {
@@ -7557,11 +7557,8 @@
             if (checkboxItems.length) for (let i = 0; i < checkboxItems.length; i++) {
                 const checkbox = checkboxItems[i];
                 checkbox.addEventListener("change", (function(e) {
-                    let formBtns = document.querySelectorAll("button[type='submit']");
-                    for (let j = 0; j < formBtns.length; j++) {
-                        const formBtn = formBtns[j];
-                        if (true == checkbox.checked) formBtn.removeAttribute("disabled", "disabled"); else formBtn.setAttribute("disabled", "disabled");
-                    }
+                    let formBtn = checkbox.parentNode.nextElementSibling;
+                    if (true == checkbox.checked) formBtn.removeAttribute("disabled", "disabled"); else formBtn.setAttribute("disabled", "disabled");
                 }));
             }
             let jsForm = document.querySelectorAll(".js-form");

@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 437 381"><defs><style>.cls-1{fill-rule:evenodd;fill:url(#Безымянный_градиент);}</style><linearGradient id="Безымянный_градиент" x1="84.32" y1="450.48" x2="85.32" y2="450.48" gradientTransform="matrix(0, -381, -437, 0, 197078, 32506.01)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#38ffb4"/><stop offset="1" stop-color="#068b01"/></linearGradient></defs><title>13</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><g id="Слой_1-2-2" data-name="Слой 1-2"><path class="cls-1" d="M437,221.1C437,132.8,357.1,0,258.5,0S0,132.7,0,221.1,159.8,381,258.5,381,437,309.4,437,221.1Z"/></g></g></g></svg>
+<svg width="421" height="483" viewBox="0 0 421 483" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M176.687 483C274.258 483 421 394.689 421 285.711C421 176.732 274.368 0 176.687 0C79.0065 0 0 176.621 0 285.711C0 394.8 79.117 483 176.687 483Z" fill="url(#paint0_linear_0_3)"/>
+<defs>
+<linearGradient id="paint0_linear_0_3" x1="1.37648" y1="241.509" x2="422.376" y2="241.509" gradientUnits="userSpaceOnUse">
+<stop stop-color="#38FFB4"/>
+<stop offset="1" stop-color="#068B01"/>
+</linearGradient>
+</defs>
+</svg>
