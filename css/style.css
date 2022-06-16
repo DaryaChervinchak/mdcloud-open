@@ -648,8 +648,16 @@ textarea {
   margin-bottom: 4.375rem;
 }
 
-.products-tabs__navigation:not(:last-child)._mb-125 {
-  margin-bottom: 7.8125rem;
+@supports (margin-bottom: clamp( 0.0000000625rem , -1.7391303474rem  +  8.6956520497vw , 4.375rem )) {
+  .products-tabs__navigation:not(:last-child) {
+    margin-bottom: clamp( 0.0000000625rem , -1.7391303474rem  +  8.6956520497vw , 4.375rem );
+  }
+}
+
+@supports not (margin-bottom: clamp( 0.0000000625rem , -1.7391303474rem  +  8.6956520497vw , 4.375rem )) {
+  .products-tabs__navigation:not(:last-child) {
+    margin-bottom: calc(0.0000000625rem + 4.3749999375 * (100vw - 20rem) / 50.3125);
+  }
 }
 
 .products-tabs__inner {
@@ -957,7 +965,7 @@ textarea {
   background-color: #fff;
   padding: 0.9375rem;
   border-radius: 0.1875rem;
-  min-width: 9.375rem;
+  min-width: 10.5rem;
 }
 
 .sub-menu > li:not(:last-child) {
@@ -1264,6 +1272,24 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
+.page_tableau-services .page-banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(#481BA6), color-stop(65.58%, #2F035B));
+  background: -o-linear-gradient(top, #481BA6 0%, #2F035B 65.58%);
+  background: linear-gradient(180deg, #481BA6 0%, #2F035B 65.58%);
+}
+
+@supports (padding-bottom: clamp( 3.125rem , 0.3920807453rem  +  13.6645962733vw , 10rem )) {
+  .page_tableau-services .page-banner {
+    padding-bottom: clamp( 3.125rem , 0.3920807453rem  +  13.6645962733vw , 10rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 3.125rem , 0.3920807453rem  +  13.6645962733vw , 10rem )) {
+  .page_tableau-services .page-banner {
+    padding-bottom: calc(3.125rem + 6.875 * (100vw - 20rem) / 50.3125);
+  }
+}
+
 @supports (margin-bottom: clamp( 2.5rem , 0.5124223602rem  +  9.9378881988vw , 7.5rem )) {
   .page_contact .page-banner__inner:not(:last-child) {
     margin-bottom: clamp( 2.5rem , 0.5124223602rem  +  9.9378881988vw , 7.5rem );
@@ -1319,6 +1345,23 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
+.page_tableau-services .page-banner__subtitle {
+  line-height: 1.4545454545;
+  color: #E5E5E5;
+}
+
+@supports (font-size: clamp( 1.25rem , 1.200310559rem  +  0.248447205vw , 1.375rem )) {
+  .page_tableau-services .page-banner__subtitle {
+    font-size: clamp( 1.25rem , 1.200310559rem  +  0.248447205vw , 1.375rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.200310559rem  +  0.248447205vw , 1.375rem )) {
+  .page_tableau-services .page-banner__subtitle {
+    font-size: calc(1.25rem + 0.125 * (100vw - 20rem) / 50.3125);
+  }
+}
+
 @supports (margin-bottom: clamp( 1.5625rem , 1.314052795rem  +  1.2422360248vw , 2.1875rem )) {
   .page-banner__animation {
     margin-bottom: clamp( 1.5625rem , 1.314052795rem  +  1.2422360248vw , 2.1875rem );
@@ -1348,6 +1391,18 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
+@supports (margin-bottom: clamp( 2.1875rem , 2.0632763975rem  +  0.6211180124vw , 2.5rem )) {
+  .page-banner__text:not(:last-child) {
+    margin-bottom: clamp( 2.1875rem , 2.0632763975rem  +  0.6211180124vw , 2.5rem );
+  }
+}
+
+@supports not (margin-bottom: clamp( 2.1875rem , 2.0632763975rem  +  0.6211180124vw , 2.5rem )) {
+  .page-banner__text:not(:last-child) {
+    margin-bottom: calc(2.1875rem + 0.3125 * (100vw - 20rem) / 50.3125);
+  }
+}
+
 .page-banner__image {
   position: relative;
   z-index: 2;
@@ -1356,6 +1411,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
 .page-banner__image img {
   z-index: 3;
+}
+
+.page-banner__btn {
+  padding: 1.125rem 3.0625rem;
 }
 
 .page-banner__list .tags-article__item {
@@ -1473,20 +1532,20 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 }
 
 .page_single-industries .animation-main__title {
-  line-height: 1.1102941176;
-  letter-spacing: 0.0257352941em;
+  line-height: 1.1615384615;
+  letter-spacing: 0.0269230769em;
   color: #300b67;
 }
 
-@supports (font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem )) {
+@supports (font-size: clamp( 1.875rem , 1.0054347826rem  +  4.347826087vw , 4.0625rem )) {
   .page_single-industries .animation-main__title {
-    font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem );
+    font-size: clamp( 1.875rem , 1.0054347826rem  +  4.347826087vw , 4.0625rem );
   }
 }
 
-@supports not (font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem )) {
+@supports not (font-size: clamp( 1.875rem , 1.0054347826rem  +  4.347826087vw , 4.0625rem )) {
   .page_single-industries .animation-main__title {
-    font-size: calc(1.875rem + 2.375 * (100vw - 20rem) / 50.3125);
+    font-size: calc(1.875rem + 2.1875 * (100vw - 20rem) / 50.3125);
   }
 }
 
@@ -1561,8 +1620,25 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 }
 
+.page_tableau-services .animation-main__title {
+  line-height: 1.2413793103;
+  text-transform: capitalize;
+}
+
+@supports (font-size: clamp( 1.875rem , 1.1793478261rem  +  3.4782608696vw , 3.625rem )) {
+  .page_tableau-services .animation-main__title {
+    font-size: clamp( 1.875rem , 1.1793478261rem  +  3.4782608696vw , 3.625rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.1793478261rem  +  3.4782608696vw , 3.625rem )) {
+  .page_tableau-services .animation-main__title {
+    font-size: calc(1.875rem + 1.75 * (100vw - 20rem) / 50.3125);
+  }
+}
+
 .animation-main__imitation-title {
-  background: url("../img/common/blomb.svg") 100% 50%/70% no-repeat;
+  background: url("../img/common/blomb-animation.svg") 100% 50%/70% no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #fff;
@@ -1586,6 +1662,23 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 @supports not (font-size: clamp( 1.875rem , 0.7321428571rem  +  5.7142857143vw , 4.75rem )) {
   .animation-main__imitation-title {
     font-size: calc(1.875rem + 2.875 * (100vw - 20rem) / 50.3125);
+  }
+}
+
+.page_tableau-services .animation-main__imitation-title {
+  line-height: 1.2413793103;
+  text-transform: capitalize;
+}
+
+@supports (font-size: clamp( 1.875rem , 1.1793478261rem  +  3.4782608696vw , 3.625rem )) {
+  .page_tableau-services .animation-main__imitation-title {
+    font-size: clamp( 1.875rem , 1.1793478261rem  +  3.4782608696vw , 3.625rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.1793478261rem  +  3.4782608696vw , 3.625rem )) {
+  .page_tableau-services .animation-main__imitation-title {
+    font-size: calc(1.875rem + 1.75 * (100vw - 20rem) / 50.3125);
   }
 }
 
@@ -1675,19 +1768,19 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 }
 
 .page_single-industries .animation-main__imitation-title {
-  line-height: 1.1102941176;
-  letter-spacing: 0.0257352941em;
+  line-height: 1.1615384615;
+  letter-spacing: 0.0269230769em;
 }
 
-@supports (font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem )) {
+@supports (font-size: clamp( 1.875rem , 1.0054347826rem  +  4.347826087vw , 4.0625rem )) {
   .page_single-industries .animation-main__imitation-title {
-    font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem );
+    font-size: clamp( 1.875rem , 1.0054347826rem  +  4.347826087vw , 4.0625rem );
   }
 }
 
-@supports not (font-size: clamp( 1.875rem , 0.9309006211rem  +  4.7204968944vw , 4.25rem )) {
+@supports not (font-size: clamp( 1.875rem , 1.0054347826rem  +  4.347826087vw , 4.0625rem )) {
   .page_single-industries .animation-main__imitation-title {
-    font-size: calc(1.875rem + 2.375 * (100vw - 20rem) / 50.3125);
+    font-size: calc(1.875rem + 2.1875 * (100vw - 20rem) / 50.3125);
   }
 }
 
@@ -4587,22 +4680,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
           align-items: center;
 }
 
-.technology-services__title {
-  text-align: center;
-}
-
-@supports (margin-bottom: clamp( 2.5rem , 1.7546583851rem  +  3.7267080745vw , 4.375rem )) {
-  .technology-services__title {
-    margin-bottom: clamp( 2.5rem , 1.7546583851rem  +  3.7267080745vw , 4.375rem );
-  }
-}
-
-@supports not (margin-bottom: clamp( 2.5rem , 1.7546583851rem  +  3.7267080745vw , 4.375rem )) {
-  .technology-services__title {
-    margin-bottom: calc(2.5rem + 1.875 * (100vw - 20rem) / 50.3125);
-  }
-}
-
 .technology-services__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4622,6 +4699,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
 .technology-services__btn {
   margin-top: 1.25rem;
+}
+
+.page_tableau-services .technology-services__btn {
+  padding: 1.125rem 2.0625rem;
 }
 
 .card-technology-service {
@@ -4787,8 +4868,8 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 }
 
 .slide-project-experience__subtitle {
-  font-size: 0.875rem;
-  line-height: 1.1428571429;
+  font-size: 1.125rem;
+  line-height: 1.2222222222;
 }
 
 .slide-project-experience__icon {
@@ -4877,8 +4958,8 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 }
 
 .card-review__text {
-  font-size: 1.25rem;
-  line-height: 1.25;
+  font-size: 1.1875rem;
+  line-height: 1.2631578947;
 }
 
 @keyframes arrow-hover {
@@ -5929,15 +6010,15 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   font-weight: 500;
 }
 
-@supports (font-size: clamp( 1.5rem , 1.4254658385rem  +  0.3726708075vw , 1.6875rem )) {
+@supports (font-size: clamp( 1.5rem , 1.450310559rem  +  0.248447205vw , 1.625rem )) {
   .item-overcome-challenges__title {
-    font-size: clamp( 1.5rem , 1.4254658385rem  +  0.3726708075vw , 1.6875rem );
+    font-size: clamp( 1.5rem , 1.450310559rem  +  0.248447205vw , 1.625rem );
   }
 }
 
-@supports not (font-size: clamp( 1.5rem , 1.4254658385rem  +  0.3726708075vw , 1.6875rem )) {
+@supports not (font-size: clamp( 1.5rem , 1.450310559rem  +  0.248447205vw , 1.625rem )) {
   .item-overcome-challenges__title {
-    font-size: calc(1.5rem + 0.1875 * (100vw - 20rem) / 50.3125);
+    font-size: calc(1.5rem + 0.125 * (100vw - 20rem) / 50.3125);
   }
 }
 
@@ -6554,7 +6635,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
   }
 
   .slide-project-experience__subtitle {
-    max-width: 60%;
+    max-width: 70%;
   }
 
   .slide-project-experience__content {
@@ -6785,7 +6866,8 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     margin-bottom: 3.125rem;
   }
 
-  .page_services .page-banner__breadcrumbs:not(:last-child) {
+  .page_services .page-banner__breadcrumbs:not(:last-child),
+  .page_tableau-services .page-banner__breadcrumbs:not(:last-child) {
     margin-bottom: 5rem;
   }
 
@@ -6823,7 +6905,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
   .banner-technology__body {
     width: 50%;
-    padding: 2.25rem 1.875rem 2.25rem 0rem;
+    padding: 2.25rem 1.25rem 2.25rem 0rem;
   }
 
   .page_tableau .banner-technology__breadcrumbs:not(:last-child),
@@ -7089,6 +7171,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     display: none;
   }
 
+  .banner-technology__text br {
+    display: none;
+  }
+
   .banner-technology__image {
     text-align: center;
     padding: 0 0.9375rem;
@@ -7242,21 +7328,12 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     margin: 0 auto;
   }
 
-  .products-tabs__navigation:not(:last-child) {
-    margin-bottom: 1.5625rem;
-  }
-
-  .products-tabs__navigation:not(:last-child)._mb-125 {
-    margin-bottom: 1.5625rem;
-  }
-
   .products-tabs__navigation {
     margin: 0 -0.9375rem;
   }
 
   .products-tabs__inner {
     padding: 0 0.9375rem;
-    margin-bottom: 2.1875rem;
   }
 
   .products-tabs__title {
@@ -7792,10 +7869,6 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     margin: 0 -0.9375rem;
   }
 
-  .slide-project-experience__subtitle {
-    font-size: 1rem;
-  }
-
   .article-blog {
     padding: 3.125rem 1.875rem;
   }
@@ -7944,6 +8017,7 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+    margin-bottom: 2.1875rem;
   }
 
   .partners-list__item {
@@ -7972,6 +8046,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
     max-width: initial;
   }
 
+  .page-banner__btn {
+    padding: 1.125rem 2rem;
+  }
+
   .main-advantages__item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
@@ -7994,6 +8072,10 @@ html.touch .menu__list > li.has-submenu._active .menu__arrow {
 
   .solution-technology {
     padding: 2.1875rem 1.5625rem;
+  }
+
+  .page_tableau-services .technology-services__btn {
+    padding: 1.125rem 1.125rem;
   }
 
   .card-technology-service__header {
